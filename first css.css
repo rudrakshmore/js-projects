@@ -1,0 +1,60 @@
+ .amz-butt{font-size: xx-large;
+background-color: rgb(255, 216, 20);
+color: black;
+border: none;
+padding-left: 60px;
+padding-right: 60px;
+border-radius: 100px;
+  }
+  .rqst-button{background-color: black;
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+border-radius: 10px;
+font-size: medium;
+border: none;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+  .sch-button{background-color: rgb(230,230,230);
+  color: rgb(0, 0, 0);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+border-radius: 10px;
+font-size: medium;
+border: none;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;}
+
+.gaming-Genre{
+background-color: rgb(230,230,230);
+border:none;
+font-size:medium;
+padding-left:20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+font-weight:600;
+cursor: pointer;
+}
+.is-toggled{background-color: rgb(0, 0, 0);
+border:none;
+color: aliceblue;
+font-size:medium;
+padding-left:20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+font-weight:600;
+cursor: pointer;
+
+
+
+}
