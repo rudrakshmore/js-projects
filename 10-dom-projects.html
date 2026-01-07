@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>DOM-projects</title>
+    <style>
+     .subscribe-button{
+      border: none;
+      background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    }
+    .is-subscribed{
+      border: none;
+      background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    
+    }
+
+    .calc-button{
+border: none;
+background-color: green;
+color: azure;
+padding: 12px 10px;
+border-radius: 0px;
+cursor: pointer;
+    }
+    .input-strip{
+padding: 10px;
+
+
+    }
+    body{
+font-family: Arial;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <p>Youtube sub button
+    <button onclick="changeName()"
+  class="js-subscribe-button subscribe-button">   Subscribe</button>
+</p>
+
+<p>Amazon Shipping Calculator</p>
+<input class="js-input input-strip"  placeholder="Cost of order"
+onkeydown="if(event.key==='Enter') {calculateBill(event)}">
+<button class="js-calc calc-button"
+  onclick="calculateBill()
+  "
+>Calculate</button>
+<p class="js-bill"calculateBill()
+></p>
+
+
+    <script> 
+
+    function calculateBill(event){
+
+      const input = document.querySelector('.js-input')
+      let cost = Number(input.value)
+if (cost>40){cost=cost}
+else{cost=cost+10}
+
+
+document.querySelector('.js-bill').innerHTML =`$${cost}`
+
+    }
+      
+      
+
+   
+function changeName(){const subbutton = document.querySelector('.js-subscribe-button')
+    
+    if(subbutton.innerText === 'Subscribe')
+  {subbutton.innerText ='Subscribed';
+subbutton.classList.add('is-subscribed');}
+
+  else {subbutton.innerText='Subscribe';subbutton.classList.remove('is-subscribed');
+  }}
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>Arrays and Loops exercises</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+  
+  <script> 
+
+/*
+const nums=[10, 20, 30]
+console.log(nums)
+nums.splice(2)
+nums.push(99)
+console.log(nums)
+        nums[2]=100  
+console.log(nums)
+
+
+lastValue=[1, 20, 22, 24, 5]
+longthrow=['bad','good']
+getLastValue(longthrow)
+
+function getLastValue(array){
+
+let i = array.length-1;
+
+  const lastIndex=array[i]
+console.log(lastIndex)
+
+
+}
+
+array=[1, 2, 3,6,5]
+arraySwap(array)
+function arraySwap(array){
+
+const lastIndex=array[array.length-1]
+const firstIndex=array[0]
+
+array[0]=lastIndex
+array[array.length-1]=firstIndex
+  console.log(array)}
+
+
+evenArray=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let i=0
+while(i<=evenArray.length-1){i++;
+  console.log(evenArray[i])
+}
+
+const evenArray=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const oddArray=[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+function addOne (array){
+  
+ const plusOneArray=[] 
+  for (let i=0;i<array.length;i++){
+
+   
+  plusOneArray.push(array[i]+1)
+ 
+}
+ return plusOneArray;
+}
+
+
+console.log(addOne(evenArray))
+
+function addNum (array,num){ const plusOneArray=[] 
+  for (let i=0;i<array.length;i++){
+
+   
+  plusOneArray.push(array[i]+num)
+ 
+}
+ return plusOneArray;}
+
+console.log(addNum(evenArray,5))
+
+
+function addArrays (array1,array2){
+  const resultantArray = []
+  for (let i=0;i<array2.length;i++){
+
+
+resultantArray.push(array1[i]+array2[i])
+
+
+
+  }
+ return resultantArray; 
+}
+
+console.log(addArrays(evenArray,oddArray))
+
+const newArray=[1, 4, 8, 5 , 7, 9]
+
+function countPositive(nums)
+{ let result = 0;
+
+  for (let i=0;i<nums.length;i++){
+if(nums[i]>0){result++}
+
+  }
+return result;
+
+
+
+
+}
+console.log(countPositive(newArray))
+
+const newArray2=[2]
+function minMax(nums)
+{
+  
+  
+  const result = 
+  {min:null,
+  max:null}
+  
+  
+  for (let i=0;i<nums.length;i++){
+    const value = nums[i]
+if(result.max === null||value>result.max){result.max=value}
+if(result.min === null || value<result.min){result.min=value}
+}
+
+ return result;
+
+  }
+ 
+
+
+console.log(minMax(newArray2))
+
+function countWords(words){
+const result = {}
+
+ for (let i=0;i<words.length;i++){const word = words[i]
+
+  if (!result[word]){result[word] = 1;}
+  else{result[word]++;}
+
+ }
+return result;
+}
+
+   console.log(countWords([  'apple', 'apple']))
+
+
+
+const words=['hello','search','world','good','search']
+let index=-1
+
+for(let i=0;i<words.length;i++){
+
+const word= words[i]
+
+if(word ==='search'){ 
+  index=i;break;}
+ 
+}
+
+console.log(index)
+
+
+
+
+function findIndex(array,givenword){
+
+let index=-1
+
+for(let i=0;i<array.length;i++){
+
+const word= array[i]
+
+if(word ===givenword){ 
+  index=i;break;}
+ 
+}
+console.log(index)
+}
+
+const strings =['red','blue','green','white']
+findIndex(strings,'black')
+
+const groceries = ['egg','egg','egg','brocoli','egg','meat']
+
+function removeEggs (foods){
+
+const reversefoods = foods.slice().reverse()
+
+  const result=[]
+let eggQuantity='';
+for(let i = 0;i<reversefoods.length;i++){
+
+const food = reversefoods[i]
+if(food==='egg'&& eggQuantity<2){eggQuantity++;continue;}
+ result.push(food)
+ 
+}
+return result.reverse()
+;
+
+}
+console.log(groceries)
+
+fizzbuzz
+
+for(let i = 1;i<=20;i++){
+let num= i
+if(num%3===0 && num%5===0){num='FizzBuzz';}
+if(num%3===0){num='Fizz';}
+if(num%5===0){num='Buzz';}
+
+
+
+
+
+console.log(num)
+ 
+}
+
+*/
+
+
+function findIndex(array,givenword){
+
+let index=-1
+
+for(let i=0;i<array.length;i++){
+
+const word= array[i]
+
+if(word ===givenword){ 
+  index=i;break;}
+ 
+}
+return index;
+}
+
+const strings =['red','blue','green','white','white','yellow']
+findIndex(strings,'white')
+
+
+function unique (array){
+const result =[]
+
+for(let i=0;i<array.length;i++){
+givenword=array[i]
+
+if(findIndex(result,givenword)===-1)
+{result.push(givenword)}
+}
+return result;
+
+}
+console.log(unique (strings))
+
+</script>
+</body>
+</html> 

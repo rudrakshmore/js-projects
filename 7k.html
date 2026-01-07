@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>variables</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p> Cart quantity</p>
+    <p>
+      
+      <button
+     
+      onclick="
+      updateCartQuantity(1)">add to cart</button>
+
+      <button
+        onclick="updateCartQuantity(2)">+2</button>
+
+        <button
+        onclick="
+      updateCartQuantity(3)">+3</button>
+
+      
+      <button
+        onclick="
+     updateCartQuantity(4);"
+      >+4</button>
+     
+      <button
+        onclick="
+        updateCartQuantity(5)
+       ">+5</button>
+
+      <button
+      onclick="
+      removeFromCart(1)">remove from cart</button>
+      <button
+       onclick="
+       removeFromCart(2)">-2</button>
+      <button
+    
+       onclick="
+       removeFromCart(3)">-3</button>
+
+        <button   
+        onclick="console.log('Cart was reset.')
+        console.log('Cart quantity:',cartQuantity=0)">reset cart</button>
+        <button
+
+        onclick="console.log(`Cart quantity: ${cartQuantity}`)"> show quantity</button>
+
+    </p>
+    <script> 
+      let cartQuantity = 0;
+  function updateCartQuantity(numbers){
+
+  if (cartQuantity >= 10 )
+  {alert('Cart is full');return;}
+
+  else{cartQuantity += numbers
+  console.log(`Cart quantity: ${cartQuantity}`);}
+
+  }
+ function removeFromCart(numbers){
+
+  if (cartQuantity <= 0 ){alert('Not enough items in the cart');return;}
+       
+       else{cartQuantity -= numbers
+      console.log(`Cart quantity: ${cartQuantity}`);}
+
+ }
+
+    </script>
+  </body>
+</html> 

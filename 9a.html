@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>DOM</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+  
+
+<button
+onclick="resultElement.innerHTML='You chose:Heads'"
+
+>heads</button>
+<button
+onclick="resultElement.innerHTML='You chose:Tails'">tails</button>
+<p class="js-choose"></p>
+
+
+
+<input class="js-input"placeholder="Name"
+onkeydown="if(event.key==='Enter'){showName(event)}">
+<button
+onclick="showName()">Submit</button>
+<p class="js-name"></p>
+
+
+
+
+
+
+
+
+
+    <script> 
+  
+    function showName(event){nameElement.innerHTML=`Your name is: ${inputElement.value}`}
+const resultElement=document.querySelector('.js-choose')
+let nameElement=document.querySelector('.js-name')
+let inputElement=document.querySelector('.js-input')
+/*console.log(document.querySelector('button'));
+document.querySelector('.js-second').innerHTML= '9b done!'
+
+
+/*console.log(document.querySelector('button')
+              .innerHTML='change');
+
+const buttonElement = document.querySelector('.js-button');
+console.log(buttonElement);
+
+
+  document.body.innerHTML='hello';
+console.log(document.title='change');
+
+console.log(document.body);
+
+console.log(typeof document.body)
+console.log(document.body.innerHTML)
+document.body.innerHTML = '<button>good job</button>'*/
+
+    </script>
+  </body>
+</html> 

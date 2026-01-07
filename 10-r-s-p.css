@@ -1,0 +1,42 @@
+ body{background-color: black;}
+      .r-s-p{color: white;
+      font-size: xx-large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      }
+      .result-element{color: rgb(238, 238, 238);
+       font-size: xx-large;
+      font-family: Impact;
+      font-weight: bold;
+      margin-top: 35px;
+      margin-bottom: 40px;
+      }
+      .moves-element{color: white;
+      font-size: larger;
+      margin-bottom: 40px;
+      
+      }
+      .score-element{color: white;
+      font-size: larger;
+    margin-bottom: 40px;}
+
+
+        .move-icon{
+          height: 55px;
+        }
+        .move-button{
+        border-image-width: auto;
+          border: 5px solid ;
+          background-color:transparent;
+          border-color: white;
+          padding: 35px;
+          border-radius: 70px;
+          margin-left: 15px
+        }
+        .rst-button{
+          border: none;
+          padding: 10px;
+          background-color: white;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        

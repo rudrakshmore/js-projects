@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>DOM-projects</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p>Youtube sub button
+    <button onclick="changeName()"
+  class="js-subscribe-button">   Subscribe</button>
+</p>
+
+<p>Amazon Shipping Calculator</p>
+<input class="js-input"  placeholder="Cost of order"
+onkeydown="if(event.key==='Enter') {calculateBill(event)}">
+<button class="js-calc"
+  onclick="calculateBill()
+  "
+>Calculate</button>
+<p class="js-bill"calculateBill()
+></p>
+
+
+<input class="js-text-input"placeholder="Type something"
+onkeyup="showOutput()"
+>
+<p class="js-text-output"></p>
+
+
+
+
+
+
+
+
+
+
+
+    <script> 
+
+
+let output1=document.querySelector('.js-text-output')
+let input1=document.querySelector('.js-text-input')
+function showOutput(){output1.innerHTML=input1.value}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function calculateBill(event){
+
+      const input = document.querySelector('.js-input')
+      let cost = Number(input.value)
+if (cost>40){cost=cost}
+else{cost=(cost*100+1000)/100}
+
+
+document.querySelector('.js-bill').innerHTML =`$${cost}`
+
+    }
+      
+      
+
+   
+function changeName(){const subbutton = document.querySelector('.js-subscribe-button')
+    
+    if(subbutton.innerText === 'Subscribe')
+  {subbutton.innerText ='Subscribed'}
+  else {subbutton.innerText='Subscribe';
+  }}
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>booleans</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p>
+      <button
+      onclick="playGame ('Heads')">Heads</button>
+      <button
+      onclick="playGame('Tails')">Tails</button>
+    </p>
+    <script> 
+    let score = JSON.parse(localStorage.getItem('score'))||{
+        wins: 0,
+        losses: 0
+      }
+;
+      function playGame(guess) {
+        let randomNumber = Math.random(0,1);
+        let computerGuess = randomNumber < 1/2 && randomNumber>0 ? 'Heads' : 'Tails'
+        
+        console.log(guess === computerGuess ? 'You win!' : 'You lose!');
+
+        if (guess === computerGuess) {
+          score.wins++;
+        } else {
+          score.losses++;
+        }
+        console.log(score);
+
+        localStorage.setItem('score',(JSON.stringify(score)))
+      }
+
+    </script>
+  </body>
+</html> 
